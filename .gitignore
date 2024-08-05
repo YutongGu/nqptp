@@ -53,6 +53,7 @@ Makefile
 # Executable
 nqptp
 
-# Version file generated from '$ git describe --dirty'
+# Version files generated from check-gitversion
 gitversion.h
+gitversion-stamp
 
