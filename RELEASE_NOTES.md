@@ -1,3 +1,6 @@
+## Version: 1.2.5-dev-29-ga93ba70
+* Use a new method to get versioning information from `git describe`. It recognises when a repository gets 'dirty' immediately.
+
 ## Version: 1.2.5-dev-27-gb59628b
 * Use Linux scheduling to give NQPTP slightly increased priority. This should make it more likely that NQPTP will be able to accurately time the arrival of timing packets and thus make synchronisation a little smoother. At startup, NQPTP will request FIFO scheduling and an associated priority. If it's not available, it will just carry on as before. The `systemd` service file has been updated to grant NQPTP limited permission to set scheduling and priority.
 
